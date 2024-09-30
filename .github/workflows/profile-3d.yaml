@@ -38,6 +38,11 @@ jobs:
         run: |
           mv profile-3d-contrib/profile-night-rainbow.svg images/profile-3d.svg
           rm -rf profile-3d-contrib
-          git add -A .
-          git commit -m "update: profile-3d-contrib images"
-          git push
+
+          if ! git diff --quiet; then
+            git add -A .
+            git commit -m "update: profile-3d-contrib images"
+            git push
+          else
+            echo "No changes to commit."
+          fi
