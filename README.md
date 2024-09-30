@@ -20,3 +20,5 @@ Here are some ideas to get you started:
 [![GitHubStatsByOwnVercelDeployment](https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
 [![GitHubTrophyByOwnVercelDeployment](https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&theme=tokyonight&title=-Stars,-Followers)](https://github.com/ryo-ma/github-profile-trophy)
+
+![hoge](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tatsuyayamauchi&theme=2077)
