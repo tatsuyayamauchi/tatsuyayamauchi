@@ -3,19 +3,41 @@
 <table>
   <tr>
     <td>
-      <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&theme=tokyonight&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint" />
-      </a>
+      <picture>
+        <source
+          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&theme=tokyonight&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint" />
+      </picture>
     </td>
     <td>
-      <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight" />
-      </a>
+      <picture>
+        <source
+          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact" />
+      </picture>
     </td>
   </tr>
 </table>
 
-[![GitHubTrophyByOwnVercelDeployment](https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&theme=tokyonight&title=-Stars,-Followers)](https://github.com/ryo-ma/github-profile-trophy)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&theme=tokyonight&title=-Stars,-Followers" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&title=-Stars,-Followers" />
+  <img alt="github profile contributions chart" src="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&title=-Stars,-Followers" />
+	</picture>
+
 
 ### My contributions
 
