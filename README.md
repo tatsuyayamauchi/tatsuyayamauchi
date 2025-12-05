@@ -19,4 +19,10 @@
 
 ### My contributions
 
-![Profile-3D-Contrib](./images/profile-3d.svg)
+<p align="center" >
+	<picture>
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/profile-3d.dark.svg" />
+	  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/profile-3d.light.svg" />
+	  <img alt="github profile contributions chart" src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/profile-3d.light.svg" />
+	</picture>
+</p>
