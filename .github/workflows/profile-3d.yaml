@@ -42,10 +42,5 @@ jobs:
           rm -rf profile-3d-contrib
 
           git add -A
-
-          if ! git diff --quiet; then
-            git commit -m "update: profile-3d-contrib images"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git commit -m "update: profile-3d-contrib images" || true
+          git push
