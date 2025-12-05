@@ -36,12 +36,14 @@ jobs:
 
       - name: Commit & Push
         run: |
-          mv profile-3d-contrib/profile-season-animate.svg images/profile-3d.light.svg
-          mv profile-3d-contrib/profile-night-rainbow.svg images/profile-3d.dark.svg
+          ls -al profile-3d-contrib
+          cp -f profile-3d-contrib/profile-season-animate.svg images/profile-3d.light.svg
+          cp -f profile-3d-contrib/profile-night-rainbow.svg images/profile-3d.dark.svg
           rm -rf profile-3d-contrib
 
+          git add -A
+
           if ! git diff --quiet; then
-            git add -A .
             git commit -m "update: profile-3d-contrib images"
             git push
           else
