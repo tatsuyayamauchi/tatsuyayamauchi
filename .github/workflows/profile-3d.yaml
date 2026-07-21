@@ -29,17 +29,45 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           ref: ${{ github.head_ref }}
 
-      - uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # 0.9.3
+      - name: Generate Profile 3D image
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # 0.9.3
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Generate stats card
+      - name: Generate trophy(dark)
+        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f #feature/generate-svg branch
+        with:
+          username: ${{ github.repository_owner }}
+          file: images/trophy.dark.svg
+          theme: tokyonight
+          margin-width: 5
+          margin-height: 5
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Generate trophy(light)
+        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f #feature/generate-svg branch
+        with:
+          username: ${{ github.repository_owner }}
+          file: images/trophy.light.svg
+          margin-width: 5
+          margin-height: 5
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Generate stats top-langs(dark)
         uses: stats-organization/github-readme-stats-action@v2
         with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
-          path: images/stats.svg
+          card: top-langs
+          options: username=${{ github.repository_owner }}&theme=tokyonight&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
+          path: images/top-langs.dark.svg
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Generate stats top-langs(light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
+          path: images/top-langs.light.svg
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Commit & Push

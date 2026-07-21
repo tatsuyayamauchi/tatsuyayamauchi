@@ -5,17 +5,20 @@
     <td>
       <picture>
         <source
-          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&theme=tokyonight&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint"
           media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.dark.svg"
         />
         <source
-          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
         />
-        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api/top-langs/?username=tatsuyayamauchi&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint" />
+        <img
+          alt="github top language"
+          src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
+        />
       </picture>
     </td>
-    <td>
+    <!-- <td>
       <picture>
         <source
           srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight"
@@ -27,15 +30,25 @@
         />
         <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact" />
       </picture>
-    </td>
+    </td> -->
   </tr>
 </table>
 
-
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&theme=tokyonight&title=-Stars,-Followers" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&title=-Stars,-Followers" />
-  <img alt="github profile contributions chart" src="https://github-profile-trophy-tatsuyayamauchis-projects.vercel.app/?username=tatsuyayamauchi&margin-w=5&margin-h=5&title=-Stars,-Followers" />
+  <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/trophy.dark.svg"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/trophy.light.svg"
+        />
+        <img
+          alt="github trophy"
+          src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/trophy.light.svg"
+        />
+      </picture>
 	</picture>
 
 
