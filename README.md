@@ -1,38 +1,30 @@
 ## Hi there 👋
 
-<table>
-  <tr>
-    <td>
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.dark.svg"
-        />
-        <source
-          media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
-        />
-        <img
-          alt="github top language"
-          src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
-        />
-      </picture>
-    </td>
-    <!-- <td>
-      <picture>
-        <source
-          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact" />
-      </picture>
-    </td> -->
-  </tr>
-</table>
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
+  />
+  <img
+    alt="github top language"
+    src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
+  />
+</picture>
+<!-- <picture>
+  <source
+    srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact" />
+</picture> -->
 
 <picture>
   <picture>

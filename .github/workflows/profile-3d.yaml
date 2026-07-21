@@ -36,20 +36,22 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
 
       - name: Generate trophy(dark)
-        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f #feature/generate-svg branch
+        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 #feature/generate-svg branch
         with:
           username: ${{ github.repository_owner }}
           file: images/trophy.dark.svg
           theme: tokyonight
+          title: "-Stars,-Followers"
           margin-width: 5
           margin-height: 5
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Generate trophy(light)
-        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f #feature/generate-svg branch
+        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 #feature/generate-svg branch
         with:
           username: ${{ github.repository_owner }}
           file: images/trophy.light.svg
+          title: "-Stars,-Followers"
           margin-width: 5
           margin-height: 5
           token: ${{ steps.app-token.outputs.token }}
