@@ -1,4 +1,4 @@
-name: GitHub profile images
+name: Profile images
 
 on:
   schedule: # 03:00 JST
@@ -8,31 +8,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile
+    name: generate-profile-image
     steps:
-      - uses: actions/create-github-app-token@v3
-        id: app-token
-        with:
-          client-id: ${{ vars.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
-      - name: Get GitHub App User ID
-        id: get-user-id
-        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-      - run: |
-          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
-          git config --global user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com>'
-
       - uses: actions/checkout@v7
         with:
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.REPO_PAT }}
           ref: ${{ github.head_ref }}
 
       - name: Generate Profile 3D image
         uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # 0.9.3
         env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: Generate trophy(dark)
@@ -44,7 +30,7 @@ jobs:
           title: "-Stars,-Followers"
           margin-width: 5
           margin-height: 5
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.REPO_PAT }}
 
       - name: Generate trophy(light)
         uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 #feature/generate-svg branch
@@ -54,7 +40,7 @@ jobs:
           title: "-Stars,-Followers"
           margin-width: 5
           margin-height: 5
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.REPO_PAT }}
 
       - name: Generate stats top-langs(dark)
         uses: stats-organization/github-readme-stats-action@v2
@@ -62,7 +48,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&theme=tokyonight&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
           path: images/top-langs.dark.svg
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.REPO_PAT }}
 
       - name: Generate stats top-langs(light)
         uses: stats-organization/github-readme-stats-action@v2
@@ -70,10 +56,13 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
           path: images/top-langs.light.svg
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.REPO_PAT }}
 
       - name: Commit & Push
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           ls -al profile-3d-contrib
           cp -f profile-3d-contrib/profile-season-animate.svg images/profile-3d.light.svg
           cp -f profile-3d-contrib/profile-night-rainbow.svg images/profile-3d.dark.svg
