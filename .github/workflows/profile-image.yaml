@@ -46,7 +46,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&theme=tokyonight&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
+          options: username=${{ github.repository_owner }}&theme=tokyonight&show_icons=true&layout=compact&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
           path: images/top-langs.dark.svg
           token: ${{ secrets.REPO_PAT }}
 
@@ -54,7 +54,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
+          options: username=${{ github.repository_owner }}&show_icons=true&layout=compact&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
           path: images/top-langs.light.svg
           token: ${{ secrets.REPO_PAT }}
 

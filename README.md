@@ -14,17 +14,6 @@
     src="https://raw.githubusercontent.com/tatsuyayamauchi/tatsuyayamauchi/main/images/top-langs.light.svg"
   />
 </picture>
-<!-- <picture>
-  <source
-    srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact&theme=tokyonight"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats-git-master-tatsuyayamauchis-projects.vercel.app/api?username=tatsuyayamauchi&show_icons=true&layout=compact" />
-</picture> -->
 
 <picture>
   <picture>
@@ -42,7 +31,6 @@
         />
       </picture>
 	</picture>
-
 
 ### My contributions
 
