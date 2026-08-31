@@ -16,13 +16,13 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Generate Profile 3D image
-        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # 0.9.3
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: Generate trophy(dark)
-        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 #feature/generate-svg branch
+        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 # feature/generate-svg branch
         with:
           username: ${{ github.repository_owner }}
           file: images/trophy.dark.svg
@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.REPO_PAT }}
 
       - name: Generate trophy(light)
-        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 #feature/generate-svg branch
+        uses: tatsuyayamauchi/github-profile-trophy@b756c3356efedf7fbe661b7f95b07a1fafc9baa9 # feature/generate-svg branch
         with:
           username: ${{ github.repository_owner }}
           file: images/trophy.light.svg
@@ -43,7 +43,7 @@ jobs:
           token: ${{ secrets.REPO_PAT }}
 
       - name: Generate stats top-langs(dark)
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&theme=tokyonight&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
@@ -51,7 +51,7 @@ jobs:
           token: ${{ secrets.REPO_PAT }}
 
       - name: Generate stats top-langs(light)
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&show_icons=true&layout=compact&exclude_repo=github-readme-stats,github-profile-trophy,rules_go,protolint,hclq
